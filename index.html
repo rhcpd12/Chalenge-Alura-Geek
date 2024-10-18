@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Challenge Alura Geek</title>
+</head>
+    <header>AluraGeek
+        <img class="cabecalho__logo" src="./assets/coracoes.png" alt="logo do site">
+    </header>
+<body>
+    <main>
+        <!-- PRODUTOS -->
+        <li class="produtos__mensagem" >Nenhum produto adicionado.</li>
+        <ul class="produtos" data-lista>          
+        </ul>
+        <section class="adicionar">
+            <h2 class="adicionar__titulo">Adicionar Produto</h2>
+            <form id="add-product-form" data-formulario>
+                <div>
+                    <input class="form__input" type="text" id="product-name" name="product-name" placeholder="Nome..." required data-nome>
+                </div>
+                <div>
+                    <input class="form__input" type="number" id="product-price" name="product-price" placeholder="Valor..." required data-preco min="0">
+                </div>
+                <div>
+                    <input class="" type="file" id="product-image" name="product-image" accept="image/*" required data-imagem hidden >
+                    <label for="product-image" class="imagem__label">Escolher imagem...</label>
+                </div>
+                <div class="botoes">
+                    <button class="botoes__btn--guardar" type="submit">Guardar</button>
+                    <button class="botoes__btn--limpar" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>  
+    <script src="./js/mostrarCards.js" type="module"></script>
+    <script src="./js/criarCard.js" type="module"></script>
+
+</body>
+<footer class="rodape">
+    <h2 class="rodape__texto">AluraGeek</h2>
+    <h3 class="rodape__nome">DESENVOLVIDO POR JOAO PAULO LEAL</h3>
+
+</footer>
+</html>

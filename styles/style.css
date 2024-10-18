@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*CABEÇALHO*/
+header {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    background: #5300C8;
+    width: 100%;
+    height: 96px; 
+    font-family: "press start 2p", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.cabecalho__logo {
+    width: 138px;
+    height: 56x;
+}
+main {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+.produtos__titulo {
+    max-width: 50%;
+    font-family: "press start 2p", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.produtos__mensagem {
+    font-family: "IBM Plex Mono",sans-serif; 
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-left: 14%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    
+}
+
+/*PRODUTOS*/
+.produtos {
+    width: 758px;
+    height: 750px;
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    overflow-y: auto; 
+    position: relative;
+
+}
+    
+
+.card__produto {
+    width: 196px;
+    height: 258px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #5D04D9;
+
+}
+
+.card__imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: solid 3px;
+}
+
+.produto__nome {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    margin: 10px 0 5px 0;
+    font-family: "IBM Plex Mono",sans-serif;
+    color: #ffffff;
+}
+
+.produto__preco {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.8px;
+    color: #ffffff;
+}
+
+.btn__delete {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.btn__delete:active {
+    animation: clickAnimation 0.2s forwards;
+}
+
+
+.btn__delete__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.adicionar__titulo {
+    max-width: 50%;
+    font-family: "press start 2p", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.adicionar {
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    height: 517px;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.form__input {
+    width: 392px;
+    height: 58px;
+    border-radius: 30px;
+    border: 3px solid #03318c;
+    font-family:"IBM Plex Mono", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20.8px;
+    margin-top: 30px;
+
+}
+
+.imagem__label {
+    width: 392px;
+    height: 58px;
+    border-radius: 30px;
+    border: 3px solid #03318c;
+    font-family:"IBM Plex Mono", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20.8px;
+    margin-top: 30px;
+    display: inline-block;
+    cursor: pointer;  
+}
+.botoes {
+    margin-top: 20px;
+}
+
+.botoes__btn--guardar{
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #03318c ;
+    cursor: pointer;
+    
+
+}
+
+.botoes__btn--guardar:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.botoes__btn--limpar {
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", sans-serif;
+    color: #03318c;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #ffffff ;
+    border: 3px solid #03318c;
+    cursor: pointer;
+    
+
+}
+
+.botoes__btn--limpar:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rodape {
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: #5300C8;
+    width: 100%;
+    height: 150px; 
+  
+}
+
+.rodape__texto {
+    width: 236px;
+    height: 51px;
+    top: 3px;
+    left: 138px;
+    text-align: center;
+    font-family: "press start 2p", sans-serif;
+}
+
+.rodape__nome {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+
+/* Ajustando layout para telas menores que 768px */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse; 
+        align-items: center; 
+        padding-left: 0;
+    }
+
+    .adicionar {
+        width: 100%; 
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .form__input {
+        width: 90%; 
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botoes__btn--guardar, .botoes__btn--limpar {
+        width: 90%; 
+        margin-top: 10px; 
+    }
+
+    .produtos {
+        width: 100%; 
+        height: auto;
+        padding: 10px; 
+        overflow-y: visible; 
+    }
+
+    .card__produto {
+        width: 90%; 
+        height: auto;
+        margin-bottom: 20px; 
+    }
+
+    .produtos__titulo, .adicionar__titulo {
+        font-size: 18px; 
+        line-height: 20px;
+    }
+
+    .produtos__mensagem {
+        font-family: "IBM Plex Mono",sans-serif; 
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20%;
+        margin-left: 14%;
+        display: block;
+        position: absolute;
+        text-align: center;
+        
+    }
+
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    50% {
+        transform: scale(0.8); 
+        opacity: 0.8; 
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+}
